@@ -1,0 +1,2 @@
+class PointOfSale < ApplicationRecord
+end

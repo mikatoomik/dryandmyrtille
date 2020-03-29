@@ -1,0 +1,2 @@
+class PointsOfSaleController < ApplicationController
+end
