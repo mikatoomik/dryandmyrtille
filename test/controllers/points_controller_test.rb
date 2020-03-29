@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PointOfSaleTest < ActiveSupport::TestCase
+class PointsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

@@ -1,6 +1,6 @@
-class CreatePointOfSales < ActiveRecord::Migration[5.2]
+class CreatePoints < ActiveRecord::Migration[5.2]
   def change
-    create_table :point_of_sales do |t|
+    create_table :points do |t|
       t.string :name
       t.string :address
       t.string :city

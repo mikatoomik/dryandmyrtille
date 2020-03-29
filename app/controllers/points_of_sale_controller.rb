@@ -1,2 +1,0 @@
-class PointsOfSaleController < ApplicationController
-end

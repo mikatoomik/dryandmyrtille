@@ -1,2 +1,0 @@
-class PointOfSale < ApplicationRecord
-end
