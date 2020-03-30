@@ -7,6 +7,8 @@ Point.create(
   city: 'Puget sur argens',
   address: '146 Boulevard de Bazeille',
   code: '83480',
+  longitude: 6.693632,
+  latitude: 43.452341,
   tel: '06 67 31 41 35'
 )
 Point.create(
@@ -14,6 +16,8 @@ Point.create(
   city: 'Saint-Raphael',
   address: '1750 boulevard de la 36eme division du Texas',
   code: '83700',
+  longitude: 6.854599,
+  latitude: 43.420033,
   tel: '06 34 18 18 80'
 )
 Point.create(
@@ -21,6 +25,8 @@ Point.create(
   city: 'Nice',
   address: '30 rue Lamartine',
   code: '06000',
+  longitude: 7.267908,
+  latitude: 43.703857,
   tel: '09 54 83 27 06'
 )
 Point.create(
@@ -28,6 +34,8 @@ Point.create(
   city: 'Nice',
   address: '31 avenue Jean Médecin',
   code: '06000',
+  longitude: 7.266477,
+  latitude: 43.702881,
   tel: '04 93 82 94 29'
 )
 Point.create(
@@ -35,6 +43,8 @@ Point.create(
   city: 'La Garde',
   address: '231 avenue Louis Antoine Saint-Just',
   code: '83130',
+  longitude: 6.021172,
+  latitude: 43.143356,
   tel: '04 94 35 88 15'
 )
 Point.create(
@@ -42,6 +52,8 @@ Point.create(
   city: 'Draguignan',
   address: '27 boulevard dela Liberté',
   code: '83300',
+  longitude: 6.464174,
+  latitude: 43.540367,
   tel: '09 82 40 45 16'
 )
 Point.create(
@@ -49,6 +61,8 @@ Point.create(
   city: 'Aix-en-provence',
   address: '14 rue Laurent Fauchier',
   code: '13100',
+  longitude: 5.448235,
+  latitude: 43.528732
 )
 
 puts "#{Point.count} points of sale created"
