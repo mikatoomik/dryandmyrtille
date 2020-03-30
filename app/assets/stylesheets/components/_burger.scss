@@ -129,6 +129,15 @@
   height: 2px;
   background: inherit;
 }
+/* Hamburger Lines - Top & Bottom Animation*/
+.menu-wrap:hover {
+  .hamburger > div::after {
+  top: 5px;
+}
+  .hamburger > div::before {
+  top: -5px;
+}
+}
 
 /* Moves Line Down */
 .menu-wrap .hamburger > div::after {

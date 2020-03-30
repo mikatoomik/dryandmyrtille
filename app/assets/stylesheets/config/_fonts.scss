@@ -2,15 +2,29 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+$body-font: "Courrier New", "Helvetica", "sans-serif";
+$headers-font: "LUNA", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+@font-face {
+  font-family: "LUNA";
+    src:font-url('LUNA.otf') format('truetype');
+    src:font-url('LUNA-ExtraLight.otf') format('truetype');
+    src:font-url('LUNA-Semibold.otf') format('truetype');
+}
+$my-font-headers: "LUNA";
+
+@font-face {
+  font-family: "Poison Hope";
+    src:font-url('PoisonHope-Regular.ttf') format('truetype');
+}
+$my-font-title: "Poison Hope";
+
+@font-face {
+  font-family: "Courrier New";
+    src:font-url('CourrierNew.ttf') format('truetype');
+    src:font-url('CourrierNew-Bold.ttf') format('truetype');
+    src:font-url('CourrierNew-BoldItalic.ttf') format('truetype');
+    src:font-url('CourrierNew-Italic.ttf') format('truetype');
+}
+$my-font: "Courrier New";

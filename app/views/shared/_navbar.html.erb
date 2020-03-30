@@ -1,6 +1,17 @@
 <%= render 'shared/burger' %>
   <header class="showcase">
-    <div class="container showcase-inner">
-
+    <div class="showcase-inner navbar-lewagon">
+    <div class="navbar-brand"> </div>
+    <div class="logo_minimal">
+    <%= link_to root_path do %>
+      <% unless request.path == root_path %>
+        <div class="logo-text">Dry & Myrtille</div>
+        <% end %>
+      <p>Accessoires fleuris</p>
+    <% end %>
+    </div>
+    <%= link_to collections_path do %>
+      <button class="btn btn-ghost">Contact</button>
+    <% end %>
     </div>
   </header>
