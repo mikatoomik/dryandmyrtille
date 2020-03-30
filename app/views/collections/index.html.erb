@@ -2,6 +2,9 @@
 <% @collections.each do |collection| %>
 <li>
   <%= collection.name %>
- </li>
+  <% collection.photos.each do |photo| %>
+    <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+  <% end %>
+</li>
   <% end %>
   </ul>
