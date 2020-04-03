@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Courrier New", "Helvetica", "sans-serif";
+$body-font: 'Courier New', Courier, monospace;;
 $headers-font: "LUNA", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
@@ -21,10 +21,10 @@ $my-font-headers: "LUNA";
 $my-font-title: "Poison Hope";
 
 @font-face {
-  font-family: "Courrier New";
-    src:font-url('CourrierNew.ttf') format('truetype');
-    src:font-url('CourrierNew-Bold.ttf') format('truetype');
-    src:font-url('CourrierNew-BoldItalic.ttf') format('truetype');
-    src:font-url('CourrierNew-Italic.ttf') format('truetype');
+  font-family: "Courier New";
+    src:font-url('CourierNew.ttf') format('truetype');
+    src:font-url('CourierNew-Bold.ttf') format('truetype');
+    src:font-url('CourierNew-BoldItalic.ttf') format('truetype');
+    src:font-url('CourierNew-Italic.ttf') format('truetype');
 }
-$my-font: "Courrier New";
+$my-font: "Courier New";

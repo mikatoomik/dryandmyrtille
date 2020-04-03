@@ -1,0 +1,15 @@
+<div id="menu_collections_navbar">
+<h1>Collections</h1>
+
+<ul class="nav justify-content-around">
+<% @collections.each do |collection| %>
+  <li class="nav-item">
+  <% active = "active" if request.path == collection_path(collection) %>
+    <%= link_to "#{collection.name}", collection_path(collection), class: "nav-link #{active}" %>
+  </li>
+<% end %>
+</ul>
+
+
+</div>
+

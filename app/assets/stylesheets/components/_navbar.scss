@@ -18,12 +18,37 @@
     text-decoration: none;
   }
   font-family: $my-font-title;
-  font-size: x-large;
+  font-size: xxx-large;
+  opacity: .7;
   p {
     font-family: $my-font;
-    font-size: 20px;
+    font-size: 23px;
     padding-left: 4em;
+    margin-top: -20px;
     opacity: .7;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+
+  }
+}
+
+
+// menu_collections_navbar
+
+#menu_collections_navbar {
+  h1 {
+    font-family: $my-font;
+    font-size: xx-large;
+    padding-left: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  a {
+    font-family: $my-font-headers;
+    font-size: xx-large;
+    font-weight: 400;
+  }
+  .active {
+    color: $red;
+    font-size: xxx-large;
   }
 }

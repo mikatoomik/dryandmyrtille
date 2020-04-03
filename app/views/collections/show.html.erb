@@ -1,0 +1,13 @@
+<%= render '/shared/menu_collections' %>
+
+<%= @collection.title %>
+<ul>
+<% @products.each do |product| %>
+<li>
+
+  <%= product.title %>
+  <%= image_tag product.image.src, style:"width: 120px; height: 120px object-fit: contain;"%>
+
+</li>
+  <% end %>
+  </ul>

@@ -1,7 +1,11 @@
+<%= render '/shared/menu_collections' %>
+
+
+
 <ul>
 <% @collections.each do |collection| %>
 <li>
-  <%= collection.name %>
+  <%= link_to "#{collection.name}", collection_path(collection) %>
 
 </li>
   <% end %>
