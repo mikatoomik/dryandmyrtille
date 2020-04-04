@@ -2,16 +2,29 @@
 
 <%= @collection.title %>
 <%= simple_form_for(@chosen_collection) do |f| %>
-  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-  <%= f.submit %>
+<%= f.input :photos, as: :file, input_html: { multiple: true } %>
+<%= f.submit %>
 <% end %>
-<ul>
-<% @products.each do |product| %>
-<li>
 
-  <%= product.title %>
-  <%= image_tag product.image.src, style:"width: 120px; height: 120px object-fit: contain;"%>
 
-</li>
-  <% end %>
-  </ul>
+<div class="row">
+  <div class="col-md-6 col-12">
+    <%= image_tag @collection.image.src, style:"width: 50vw; object-fit: contain;" %>
+  </div>
+  <div class="col-md-6 col-12 d-flex flex-column align-items-center">
+    <p id="desc"><%= @chosen_collection.description %></p>
+
+    <% @products.each do |product| %>
+    <div class="card_product d-flex mx-auto m-2 p-1 bg-light">
+      <div class="card_img">
+        <%= image_tag product.image.src %>
+      </div>
+      <div class="card_text d-flex flex-column justify-content-around align-items-center">
+        <h5><%= product.title %></h5>
+        <p><%= product.variants.first.sku %></p>
+        <p><strong><%= product.variants.first.price %> €</strong></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
