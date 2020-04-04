@@ -15,7 +15,7 @@
     <p id="desc"><%= @chosen_collection.description %></p>
 
     <% @products.each do |product| %>
-      <%= link_to product_path do %>
+      <%= link_to product_path(product.id) do %>
       <div class="card_product d-flex mx-auto m-2 p-1 bg-light">
         <div class="card_img">
           <%= image_tag product.image.src %>
