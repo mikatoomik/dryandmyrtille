@@ -1,12 +1,31 @@
 <%= render '/shared/menu_collections' %>
 
+<div class="masonery_container">
+  <%#  i = 1 %>
+  <% @collections.each do |collection| %>
 
-
-<ul>
-<% @collections.each do |collection| %>
-<li>
-  <%= link_to "#{collection.name}", collection_path(collection) %>
-
-</li>
+  <div class="card py-3">
+    <%#= i %>
+    <%= link_to collection_path(collection), class:"d-flex flex-column justify-content-around", style: "height:100%;" do %>
+    <%# i += 1 %>
+    <div class="card_title">
+      <h4><%= collection.name %></h4>
+    </div>
+    <div class="card_sous-title">
+      <h5><%= collection.theme %></h5>
+    </div>
+    <div class="card_text px-5">
+      <p><%= collection.description %></p>
+    </div>
+    <% end %>
+  </div>
+  <% collection.photos.each do |photo| %>
+  <div class="photo_masonery">
+    <%= cl_image_tag photo.key %>
+    <%#= i %>
+  </div>
+  <%# i += 1 %>
   <% end %>
-  </ul>
+
+  <% end %>
+</div>

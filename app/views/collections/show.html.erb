@@ -1,6 +1,10 @@
 <%= render '/shared/menu_collections' %>
 
 <%= @collection.title %>
+<%= simple_form_for(@chosen_collection) do |f| %>
+  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+  <%= f.submit %>
+<% end %>
 <ul>
 <% @products.each do |product| %>
 <li>
